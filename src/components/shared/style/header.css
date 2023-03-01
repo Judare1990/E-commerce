@@ -1,0 +1,10 @@
+.header_links{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.header_links{
+    display: flex;
+    gap: 3rem;
+    margin-right: 3rem;
+}
