@@ -4,11 +4,11 @@ const PurchaseCard = ({purchase}) => {
   return (
     <article>
         <header>
-            <img src="{purchase.product.images[0].url}" alt="" />
+            <img src={purchase.product.images[2].url} alt="" />
         </header>
         <h3>{purchase.product.title}</h3>
         <div>{purchase.quantity}</div>
-        <div>{purchase.ptoduct.price}</div>
+        <div>{purchase.product.price}/each</div>
     </article>
   )
 }

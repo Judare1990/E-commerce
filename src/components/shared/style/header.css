@@ -1,10 +1,37 @@
-.header_links{
+.header_container{
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 370px;
+    margin: 0 auto;
+}
+.header_title_container{
+    width: 100%;
+    max-width: 1020px;
+}
+.header_title{
+    color: #f85555;
+    font-size: 1.5rem;
+
+}
+.header_nav{
+    background: #fff;
+    justify-content:center;
+}
+
+.header_link-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    list-style: none;
+    height: 3rem;
+    gap: 2rem; 
 }
 .header_links{
-    display: flex;
-    gap: 3rem;
-    margin-right: 3rem;
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 1em;
 }
+

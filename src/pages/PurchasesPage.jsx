@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import PurchaseCard from '../components/PurchasesPage/PurchaseCard'
+import config from '../utils/getConfig'
 
 const PurchasesPage = () => {
 

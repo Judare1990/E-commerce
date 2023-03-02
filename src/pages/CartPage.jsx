@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import CartItem from '../components/CardPages/CartItem'
+import { getCartThunk } from '../store/slices/cart.slice'
 import config from '../utils/getConfig'
 
 const CartPage = () => {
@@ -26,10 +27,7 @@ const CartPage = () => {
         dispatch(getCartThunk())
       })
       .catch(err => console.log(err.response))
-    e.stopPropagation()
   }
-
-
 
   return (
     <div>

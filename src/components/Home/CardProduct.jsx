@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { getCartThunk } from '../../store/slices/cart.slice'
 import config from '../../utils/getConfig'
+import './styles/cardProduct.css'
 
 const CardProduct = ({product}) => {
 
@@ -21,7 +22,7 @@ const CardProduct = ({product}) => {
 
         const data ={
             quantity: 1,
-            ProductId: product.id
+            productId: product.id
         }
         axios.post(url, data, config)
         .then(res =>{
@@ -33,7 +34,7 @@ const CardProduct = ({product}) => {
     }
 
   return (
-    <article onClick={handleClick}>
+    <article className='card_products' onClick={handleClick}>
         <header>
             <img src={product.images[0].url} alt="" />
         </header>
