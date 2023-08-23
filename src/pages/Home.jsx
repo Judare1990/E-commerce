@@ -63,6 +63,20 @@ return (
       </button>
     </form>
 
+    <div className='home_products'>
+      {
+        products?.length === 0 ?
+          <h1>This product does not exist</h1>
+          :
+          products?.filter(filterProduct).map(product => (
+            <CardProduct
+              key={product.id}
+              product={product}
+            />
+          ))
+      }
+    </div>
+
     <article className='card_main-container'>
 
       <section className='filter_container'>
@@ -99,19 +113,7 @@ return (
     </article>
 
 
-    <div className='home_products'>
-      {
-        products?.length === 0 ?
-          <h1>This product does not exist</h1>
-          :
-          products?.filter(filterProduct).map(product => (
-            <CardProduct
-              key={product.id}
-              product={product}
-            />
-          ))
-      }
-    </div>
+   
   </div>
 )
 }

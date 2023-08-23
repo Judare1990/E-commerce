@@ -1,3 +1,7 @@
+.home_main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .home_products{
     display: flex;
     justify-content: center;
@@ -30,8 +34,8 @@
     transform: scale(1.05);
 }
 .card_main-container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 3rem;
     margin-bottom: 5rem;
     width: 100%;
