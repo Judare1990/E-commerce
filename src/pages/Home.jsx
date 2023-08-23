@@ -6,7 +6,7 @@ import {
   getAllProductsThunk,
   getProductsByName,
 } from "../store/slices/products.slice";
-import "./styles/home.css";
+import "./styles/home.css"
 
 const Home = () => {
   const [categories, setCategories] = useState();
@@ -86,7 +86,6 @@ const Home = () => {
         <section className="filter_container">
           <header className="filter_price">
             <h3 className="filter_price-name">Price</h3>
-            <i className="bx bx-chevron-down"></i>
           </header>
           <hr />
           <form className="filter_form" onSubmit={handleSubmitPrice}>
@@ -102,14 +101,14 @@ const Home = () => {
         <section>
           <header>
             <h3>Category</h3>
-            <i className="bx bx-chevron-down"></i>
           </header>
-          <ul>
-            <li onClick={() => dispatch(getAllProductsThunk())}>
+          <hr />
+          <ul className="category">
+            <li className="allProducts" onClick={() => dispatch(getAllProductsThunk())}>
               All Products
             </li>
             {categories?.map((category) => (
-              <li
+              <li className="categories"
                 key={category.id}
                 onClick={() => handleClickCategory(category.id)}
               >

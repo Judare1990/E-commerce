@@ -1,0 +1,30 @@
+/* Estilos específicos para la página de inicio de sesión */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Establece una altura fija para centrar verticalmente */
+  background-color: whitesmoke; /* Color de fondo blanco para el contenido del login */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 50%; /* Ancho fijo del contenedor */
+  margin: auto;
+  margin-top: 6rem; /* Margen automático para centrar horizontalmente */
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  color: #f85555;
+  margin: auto;
+  padding: 2rem;
+}
+.credentials {
+  padding-bottom: 1rem;
+  padding-left: 11rem;
+}
+.email {
+  padding-left: 2.01rem;
+  height: 1.5rem;
+}
