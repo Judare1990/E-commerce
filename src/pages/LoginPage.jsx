@@ -57,10 +57,10 @@ const LoginPage = () => {
           <label className='credentials' htmlFor='password'>Password: </label>
           <input {...register('password')} type='password' id='password' />
         </div>
-        <button className='login'>Login</button>
+        <button className="login login_button">Login</button>
       </form>
-      <Link to='/user/register'>
-        <button>Don't have an account? sign up</button>
+      <Link className='signup_container' to='/user/register'>
+        <button>Don't have an account? <span className='signup'>sign up</span></button>
       </Link>
     </div>
   );
